@@ -2,25 +2,25 @@
 
 using namespace std;
 
-rukovoditel::rukovoditel(int num) : sotrudnik()
+rukovoditel::rukovoditel(int num) : sotrudnik() //конструктор с параметрами
 {
-    if (!SetNum(num))
+    if (!SetNum(num))           //проверка на правильность введенных данных
     {
         snum=0;
     }
 }
 
-rukovoditel::rukovoditel()
+rukovoditel::rukovoditel() //конструктор без параметров
 {
     snum = 36;
 }
 
-rukovoditel::rukovoditel(const rukovoditel &obj)
+rukovoditel::rukovoditel(const rukovoditel &obj)//конструктор копирования
 {
     snum = obj.snum;
 }
 
-bool rukovoditel::SetNum(int num)
+bool rukovoditel::SetNum(int num)//проверка на правильность введенных данных в сеттере
 {   if (num<0)
     {
     return false;
