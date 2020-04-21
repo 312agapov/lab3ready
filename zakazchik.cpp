@@ -2,17 +2,17 @@
 
 using namespace std;
 
-zakazchik::zakazchik(string name) : fizlico()
+zakazchik::zakazchik(string name) : fizlico()//конструктор с параметрами
 {
     sname=name;
 }
 
-zakazchik::zakazchik()
+zakazchik::zakazchik()//конструктор без параметров
 {
     sname = "zakazivali piccy?";
 }
 
-zakazchik::zakazchik(const zakazchik &obj)
+zakazchik::zakazchik(const zakazchik &obj)//конструктор копирования
 {
     sname = obj.sname;
 }
